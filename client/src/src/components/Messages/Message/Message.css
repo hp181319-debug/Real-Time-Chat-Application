@@ -1,0 +1,78 @@
+.messageRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 0 5%;
+  margin-top: 2px;
+}
+
+.messageRow.groupStart { margin-top: 10px; }
+.messageRow.mine { justify-content: flex-end; }
+.messageRow.theirs { justify-content: flex-start; }
+
+.msgAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bubble {
+  position: relative;
+  max-width: 68%;
+  padding: 6px 9px 7px 11px;
+  border-radius: 10px;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+  font-size: 14.5px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.bubbleTheirs { background: #fff; color: #111b21; }
+.bubbleMine { background: #d9fdd3; color: #111b21; }
+
+/* Small "tail" corner on the first bubble of a run */
+.bubbleTheirs.hasTail { border-top-left-radius: 2px; }
+.bubbleMine.hasTail { border-top-right-radius: 2px; }
+
+.senderName {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.bubbleText { white-space: pre-wrap; }
+
+/* Time sits at the bottom-right, like WhatsApp */
+.bubbleTime {
+  float: right;
+  margin: 6px 0 -3px 12px;
+  font-size: 11px;
+  color: #667781;
+}
+
+.systemRow {
+  display: flex;
+  justify-content: center;
+  margin: 12px 5% 4px;
+}
+
+.systemMsg {
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: #fff3c4;
+  color: #54656f;
+  font-size: 12.5px;
+  text-align: center;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.1);
+}
+
+.messageRow:first-child, .systemRow:first-child { margin-top: 16px; }

@@ -1,0 +1,73 @@
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 16px;
+  background: linear-gradient(#00a884 0, #00a884 220px, #d1d7db 220px);
+}
+
+.joinCard {
+  width: 100%;
+  max-width: 400px;
+  padding: 36px 32px 32px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(11, 20, 26, 0.18);
+  text-align: center;
+}
+
+.joinLogo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #e7fce3;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinTitle { margin: 0; font-size: 24px; font-weight: 500; }
+
+.joinSubtitle { margin: 6px 0 24px; color: #667781; font-size: 14px; }
+
+.joinLabel {
+  display: block;
+  text-align: left;
+  margin: 14px 0 6px;
+  font-size: 13px;
+  color: #54656f;
+}
+
+.joinInput {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #d1d7db;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.joinInput:focus {
+  border-color: #00a884;
+  box-shadow: 0 0 0 3px rgba(0, 168, 132, 0.15);
+}
+
+.joinButton {
+  width: 100%;
+  margin-top: 26px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #00a884;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.joinButton:hover:not(:disabled) { background: #008f6f; }
+.joinButton:disabled { background: #b4e3d8; cursor: not-allowed; }

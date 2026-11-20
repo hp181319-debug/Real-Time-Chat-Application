@@ -1,0 +1,58 @@
+.infoBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #f0f2f5;
+  border-bottom: 1px solid #d1d7db;
+}
+
+.backLink {
+  display: none;
+  color: #54656f;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.roomAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.roomInfo { flex: 1; min-width: 0; }
+
+.roomName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.roomStatus { font-size: 13px; color: #667781; }
+
+.leaveButton {
+  padding: 7px 14px;
+  border-radius: 18px;
+  border: 1px solid #d1d7db;
+  background: #fff;
+  color: #54656f;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.leaveButton:hover { background: #fde8e8; color: #c0392b; border-color: #f5b7b1; }
+
+@media (max-width: 768px) {
+  .backLink { display: block; }
+}
